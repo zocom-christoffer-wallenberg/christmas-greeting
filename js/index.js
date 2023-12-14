@@ -50,8 +50,8 @@ function addEventListeners() {
     });
 }
 
-window.addEventListener('offline', () => window.location.href = '/offline.html');
-window.addEventListener('online', () => window.location.href = '/   ');
+window.addEventListener('offline', () => window.location.href = '/christmas-greeting/offline.html');
+window.addEventListener('online', () => window.location.href = '/christmas-greeting');
 
 function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
@@ -62,11 +62,9 @@ function registerServiceWorker() {
 }
 
 function checkIfOffline() {
-    if (window.navigator.onLine && window.location.href.includes('/christmas-greeting/offline.html')) {
-        window.location.href = '/';
-    } else if (!window.navigator.onLine && window.location.href.includes('/christmas-greeting/offline.html')) {
-        setTimeout(() => addEventListeners(), 500);
-    }
+    if (window.navigator.onLine && window.location.href.includes('offline.html')) window.location.href = '/christmas-greeting';
+    
+    setTimeout(() => addEventListeners(), 500);
 }
 
 registerServiceWorker();
