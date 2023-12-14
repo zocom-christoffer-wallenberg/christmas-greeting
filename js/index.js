@@ -62,9 +62,9 @@ function registerServiceWorker() {
 }
 
 function checkIfOffline() {
-    if (window.navigator.onLine && window.location.href.includes('/offline.html')) {
+    if (window.navigator.onLine && window.location.href.includes('/christmas-greeting/offline.html')) {
         window.location.href = '/';
-    } else if (!window.navigator.onLine && window.location.href.includes('/offline.html')) {
+    } else if (!window.navigator.onLine && window.location.href.includes('/christmas-greeting/offline.html')) {
         setTimeout(() => addEventListeners(), 500);
     }
 }
