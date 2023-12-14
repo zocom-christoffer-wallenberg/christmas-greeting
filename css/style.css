@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    font-size: 10px;
+    background-color: #235E6F;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    top: 10rem;
+}
+
+img {
+    height: 5rem;
+    border: 5px solid #000000;
+    border-radius: 999rem;
+}
+
+.greeting-screen {
+    background-color: #ffffff;
+    background-image: url(../assets/4523293.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.info {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5em;
+    color: #ffffff;
+    max-width: 500px;
+    margin: 1rem;
+}
+
+.info_black {
+    color: #000000;
+}
+
+.decoration-circle { 
+    border: 1px solid rgba(0,0,0,0.3); 
+    position: relative; 
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%; 
+    margin-left: 20px; 
+} 
+.decoration-circle:before { 
+    content: "";
+    background: #fff;
+    border: 1px solid #dadada;
+    height: 10px;
+    width: 15px;
+    position: absolute;
+    top: -10px;
+    border-radius: 2px;
+    left: 11px;
+}
+
+.lace:before { 
+    content: ""; 
+    background-color: grey; 
+    height: 25px; 
+    width: 2px; 
+    display: block; 
+    margin-left: 39px; 
+}
+
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+}
+
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s linear forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 2s linear forwards;
+}
+
+.greeting {
+    fill: url(#christmas);
+    fill-opacity: 0;
+    stroke: url(#christmas);
+    stroke-width: 4;
+    stroke-linecap: round;
+
+    stroke-dasharray: 860;
+    stroke-dashoffset: 860;
+    animation: draw 1.5s linear forwards;
+}
+
+.greeting-e {
+    animation-delay: 1s
+}
+
+.greeting-r {
+    animation-delay: 2s
+}
+
+.greeting-r_2 {
+    animation-delay: 3s
+}
+
+.greeting-y {
+    animation-delay: 4s
+}
+
+.greeting-c {
+    animation-delay: 5s
+}
+
+.greeting-h {
+    animation-delay: 6s
+}
+
+.greeting-r_3 {
+    animation-delay: 7s
+}
+
+.greeting-i {
+    animation-delay: 8s
+}
+
+.greeting-s {
+    animation-delay: 9s
+}
+
+.greeting-t {
+    animation-delay: 10s
+}
+
+.greeting-m_2 {
+    animation-delay: 11s
+}
+
+.greeting-a {
+    animation-delay: 12s
+}
+
+.greeting-s_2 {
+    animation-delay: 13s
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+@-o-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
